@@ -21,5 +21,6 @@ COPY --from=build /app/out ./
 EXPOSE 8080
 EXPOSE 8081
 
+
 # Start the application
 ENTRYPOINT ["dotnet", "PuchiniWebApi.dll"]
