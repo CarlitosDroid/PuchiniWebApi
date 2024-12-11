@@ -18,8 +18,8 @@ WORKDIR /app
 COPY --from=build /app/out ./
 
 # Expose the port your application will run on
-EXPOSE 80
-ENV ASPNETCORE_HTTP_PORTS=80
+EXPOSE 8080
+EXPOSE 8081
 
 # Start the application
 ENTRYPOINT ["dotnet", "PuchiniWebApi.dll"]
